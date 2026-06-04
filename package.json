@@ -1,0 +1,29 @@
+{
+  "name": "shopify-starter-theme",
+  "version": "1.0.0",
+  "description": "Starter theme for shopify with Tailwind and Vite",
+  "keywords": [
+    "vite",
+    "tailwind",
+    "shopify"
+  ],
+  "license": "ISC",
+  "author": "calulu",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx @tailwindcss/cli -i ./src/css/main.css -o ./assets/main.css --watch",
+    "shopify": "shopify theme dev",
+    "build": "npx vite build",
+    "dev:js": "vite build --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "gsap": "^3.15.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}
