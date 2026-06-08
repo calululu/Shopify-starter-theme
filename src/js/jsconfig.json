@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "paths": {
+      // "@theme/*": ["./*"]
+      // "@theme/*": ["./src/js/*"]
+      "@theme/*": ["/src/js/*"]
+    },
+    "checkJs": true,
+    "target": "ES2020",
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "strictNullChecks": true,
+    "types": ["./global.d.ts"]
+  }
+}

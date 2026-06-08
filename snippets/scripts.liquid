@@ -1,0 +1,23 @@
+{% doc %}
+  Renders all global scripts, module preloads, and importmaps for the theme.
+{% enddoc %}
+{% comment %}
+  {% if template == 'product' or template.name == 'product' or request.page_type == 'product' %}
+    <script
+      src="{{ 'fly-to-cart.js' | asset_url }}"
+      type="module"
+      fetchpriority="low"
+    ></script>
+    <script
+      src="{{ 'sticky-add-to-cart.js' | asset_url }}"
+      type="module"
+      fetchpriority="low"
+    ></script>
+    <script type="module">
+      import { RecentlyViewed } from '@theme/recently-viewed-products';
+      RecentlyViewed.addProduct('{{ product.id }}');
+    </script>
+  {% endif %}
+{% endcomment %}
+
+<script src="{{ 'main.js' |  asset_url }}" defer></script>

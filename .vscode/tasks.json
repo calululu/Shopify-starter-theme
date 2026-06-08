@@ -2,29 +2,10 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Tailwind Watch",
-      "type": "shell",
-      "command": "npx",
-      "args": [
-        "@tailwindcss/cli",
-        "-i",
-        "./src/css/main.css",
-        "-o",
-        "./assets/main.css",
-        "--watch"
-      ],
-      "presentation": {
-        "group": "dev-servers",
-        "reveal": "always",
-        "clear": true
-      },
-      "problemMatcher": []
-    },
-    {
       "label": "Vite Watch",
       "type": "shell",
       "command": "npm",
-      "args": ["run", "dev:js"],
+      "args": ["run", "dev:build"],
       "presentation": {
         "group": "dev-servers",
         "reveal": "always"

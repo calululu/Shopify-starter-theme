@@ -1,1 +1,93 @@
-@import "tailwindcss";
+@import "tailwindcss" theme(static) source(none);
+
+@source "../js/**/*.js";
+@source "../js/**/*.ts";
+@source "../../**/*.liquid";
+
+@layer components {
+  html {
+    font-size: 100%; /* 16px default */
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-mulish);
+    color: var(--color-black);
+    font-style: normal;
+    font-weight: normal;
+    font-optical-sizing: auto;
+    background-color: var(--color-green-700);
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  }
+  /* nomalization preferencies, don't touch */
+  button {
+    cursor: pointer;
+  }
+  li {
+    list-style: none;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block; /* normalmente sono tutti elementi in-line */
+    max-width: 100%; /* si adattano al contenitore */
+    user-select: none; /* non possono essere selezionate/evidenziate */
+  }
+  b {
+    font-family: var(--font-mulish);
+    font-weight: bold;
+  }
+  em {
+    font-family: var(--font-mulish);
+    font-style: italic;
+  }
+
+  ins {
+    text-decoration: none;
+  }
+
+  ::selection {
+    background-color: var(--color-beige);
+    color: var(--color-black);
+  }
+
+  /* For Chrome/Edge and Safari */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+  /* For Firefox */
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  /* Removes the woocommerce :focust-active outline  */
+  .woocommerce *:focus {
+    outline: none;
+  }
+}
+
+@theme {
+  /* colors */
+  --color-white: #ffffff;
+  --color-red: #812024;
+  --color-black: #3c3c3b;
+  --color-beige: #cbb9a9;
+  --color-cream: #f2eeea;
+
+  /* fonts */
+  --font-mulish: Mulish, sans-serif;
+  --font-prata: Prata, sans-serif;
+
+  /* Extra */
+  --duration-m: 0.1s;
+  --radius: 3rem;
+  --padding-desktop: 2.625rem;
+  --padding-mobile: 1.2rem;
+}
+
+@utility content-auto {
+  content-visibility: auto;
+}

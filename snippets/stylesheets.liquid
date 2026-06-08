@@ -1,0 +1,6 @@
+{% doc %}
+  Renders all global scripts, module preloads, and importmaps for the theme.
+{% enddoc %}
+
+{% comment %} {{ 'overflow-list.css' | asset_url | preload_tag: as: 'style' }} {% endcomment %}
+{{ 'main.css' | asset_url | stylesheet_tag: preload: true }}

@@ -1,0 +1,77 @@
+{
+  "general": {
+    "404": "Non trovato",
+    "article": "Articolo",
+    "block": "Blocco",
+    "blog": "Blog",
+    "cart": "Carrello",
+    "collection": "Collezione",
+    "collections": "Collezioni",
+    "collection_card": "Scheda collezione",
+    "collections_grid": "Griglia delle collezioni",
+    "colors": "Colori",
+    "column": "Colonna",
+    "content": "Contenuto",
+    "custom_section": "Sezione personalizzata",
+    "fonts": "Caratteri",
+    "footer": "Piè di pagina (Footer)",
+    "group": "Gruppo",
+    "header": "Intestazione (Header)",
+    "layout": "Layout",
+    "main": "Principale",
+    "page": "Pagina",
+    "password": "Password",
+    "primary": "Primario",
+    "product": "Prodotto",
+    "row": "Riga",
+    "search": "Cerca",
+    "secondary": "Secondario",
+    "section": "Sezione",
+    "settings": "Impostazioni",
+    "sidebar": "Barra laterale (Sidebar)",
+    "text": "Testo",
+    "theme": "Tema",
+    "typography": "Tipografia"
+  },
+  "labels": {
+    "alignment": "Allineamento",
+    "background": "Sfondo",
+    "foreground": "Primo piano",
+    "grid_gap": "Spaziatura griglia",
+    "grid_item_width": "Larghezza elemento griglia",
+    "input_corner_radius": "Raggio angolo campi di input",
+    "layout_direction": "Direzione del layout",
+    "menu": "Menu",
+    "customer_account_menu": "Menu account cliente",
+    "padding": "Spaziatura interna (Padding)",
+    "page_margin": "Margine della pagina",
+    "page_width": "Larghezza della pagina",
+    "show_payment_icons": "Mostra icone di pagamento",
+    "text_style": "Stile del testo",
+    "text": "Testo"
+  },
+  "options": {
+    "alignment": {
+      "left": "Sinistra",
+      "center": "Centro",
+      "right": "Destra"
+    },
+    "direction": {
+      "horizontal": "Orizzontale",
+      "vertical": "Verticale"
+    },
+    "page_width": {
+      "narrow": "Stretto",
+      "wide": "Largo"
+    },
+    "size": {
+      "large": "Grande",
+      "small": "Piccolo"
+    },
+    "text_style": {
+      "title": "Titolo",
+      "subtitle": "Sottotitolo",
+      "normal": "Testo normale"
+    }
+  }
+}

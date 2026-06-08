@@ -12,13 +12,13 @@
     {% for product in collection.products %}
       <div class="collection-product">
         {% if product.featured_image %}
-          {% render 'image',
-            class: 'collection-product__image',
-            image: product.featured_image,
-            url: product.url,
-            width: 400,
-            height: 400,
-            crop: 'center'
+          {% render 'component-image'
+            , class: 'collection-product__image'
+            , image: product.featured_image
+            , url: product.url
+            , width: 400
+            , height: 400
+            , crop: 'center'
           %}
         {% endif %}
         <div class="collection-product__content">
@@ -40,8 +40,8 @@
 {% endstylesheet %}
 
 {% schema %}
-{
-  "name": "t:general.collection",
-  "settings": []
-}
+  {
+    "name": "t:general.collection",
+    "settings": []
+  }
 {% endschema %}
