@@ -1,14 +1,22 @@
 name: CI
+
 on: [push]
+
 jobs:
-  theme-check:
-    name: Theme Check
+  build-and-check:
     runs-on: ubuntu-latest
-    permissions:
-      checks: write
-      contents: read
+
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
       - name: Theme Check
         uses: shopify/theme-check-action@v2
         with:
