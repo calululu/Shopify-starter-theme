@@ -6,8 +6,10 @@
       "type": "shell",
       "command": "npm",
       "args": ["run", "dev:build"],
+      "isBackground": true,
       "presentation": {
         "group": "dev-servers",
+        "panel": "dedicated",
         "reveal": "always"
       },
       "problemMatcher": []
@@ -15,21 +17,25 @@
     {
       "label": "Shopify Theme Dev",
       "type": "shell",
-      "command": "shopify",
-      "args": ["theme", "dev"],
+      "command": "npm",
+      "args": ["run", "shopify"],
+      "isBackground": true,
       "presentation": {
         "group": "dev-servers",
+        "panel": "dedicated",
         "reveal": "always"
       },
       "problemMatcher": []
     },
     {
       "label": "Start Dev Environment",
-      "dependsOn": ["Tailwind Watch", "Vite Watch", "Shopify Theme Dev"],
+      "dependsOrder": "parallel",
+      "dependsOn": ["Vite Watch", "Shopify Theme Dev"],
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "problemMatcher": []
     }
   ]
 }
